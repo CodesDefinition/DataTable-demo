@@ -14,6 +14,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditForm from "./EditForm";
 import DeleteForm from "./DeleteForm";
 import styles from "../css/members.module.css";
+import Navbar from "./Navbar";
 
 export default function Members() {
   const [open, setOpen] = useState(false);
@@ -53,7 +54,8 @@ export default function Members() {
     setOpen(false);
   };
   return (
-    <div className="container">
+    <div className={styles.container}>
+      <Navbar />
       <div className={styles.memberForm}>
         <TextField
           id="outlined-basic"
@@ -80,10 +82,10 @@ export default function Members() {
           Add Member
         </Button>
       </div>
+      <h2 className={styles.title}>Group Study Members</h2>
       <TableContainer component={Paper} className={styles.dataTable}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
-            <h2 className={styles.title}>Group Study Members</h2>
             <TableRow>
               <TableCell align="center">ID</TableCell>
               <TableCell align="center">First Name</TableCell>

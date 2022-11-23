@@ -1,0 +1,26 @@
+nav {
+  width: 100%;
+  border-bottom: #dddddd;
+  z-index: 100;
+  background-color: dodgerblue;
+}
+
+#navbar {
+  min-height: 80px;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+#navlist {
+  display: flex;
+  gap: 24px;
+}
+
+.navitem,
+a {
+  color: #fff;
+}
